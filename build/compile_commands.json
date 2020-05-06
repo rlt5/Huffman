@@ -1,32 +1,67 @@
 [
 {
   "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe    -g   -std=gnu++11 -o CMakeFiles\\Huffman.dir\\Example.cpp.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\Example.cpp\"",
-  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/Example.cpp"
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /FoCMakeFiles\\Huffman.dir\\BitStream.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\BitStream.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/BitStream.cpp"
 },
+
 {
-  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googlemock",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock_main.cc\"",
-  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock_main.cc"
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /FoCMakeFiles\\Huffman.dir\\FrequencyCounter.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\FrequencyCounter.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/FrequencyCounter.cpp"
 },
+
 {
-  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googlemock",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gmock.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock-all.cc\"",
-  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock-all.cc"
-},
-{
-  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gtest.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googlemock\\include -I..\\googletest\\googlemock -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googlemock\\CMakeFiles\\gmock_main.dir\\__\\googletest\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest-all.cc\"",
   "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest-all.cc"
 },
+
 {
-  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest_main.cc\"",
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googlemock\\include -I..\\googletest\\googlemock -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock-all.cc"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googlemock\\include -I..\\googletest\\googlemock -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock_main.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock_main.cc"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googlemock\\include -I..\\googletest\\googlemock -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googlemock\\CMakeFiles\\gmock.dir\\__\\googletest\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest-all.cc"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googlemock\\include -I..\\googletest\\googlemock -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock-all.cc"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest-all.cc"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W4 /GR  /MD /Zi /O2 /Ob1 /DNDEBUG   -GS -W4 -WX -wd4251 -wd4275 -nologo -J -Zi -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1  /Fogoogletest\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest_main.cc\"",
   "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest_main.cc"
 },
+
 {
-  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test",
-  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/ExampleTests.dir/includes_CXX.rsp -g   -std=gnu++11 -o CMakeFiles\\ExampleTests.dir\\ExampleTests.cpp.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\ExampleTests.cpp\"",
-  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/ExampleTests.cpp"
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\BitStreamTests.dir\\BitStreamTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\BitStreamTests.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/BitStreamTests.cpp"
+},
+
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\BitStreamTests.dir\\FrequencyCounterTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\FrequencyCounterTests.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/FrequencyCounterTests.cpp"
 }
 ]

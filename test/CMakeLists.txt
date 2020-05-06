@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(This ExampleTests)
+set(This BitStreamTests)
 
 set(Sources
-    ExampleTests.cpp
+    BitStreamTests.cpp
+    FrequencyCounterTests.cpp
 )
 
 add_executable(${This} ${Sources})

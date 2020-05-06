@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libHuffman.a  CMakeFiles/Huffman.dir/Example.cpp.obj
-C:\MinGW\bin\ranlib.exe libHuffman.a

@@ -13,10 +13,12 @@ enable_testing()
 add_subdirectory(googletest)
 
 set(Headers
-    Example.hpp
+    BitStream.hpp
+    FrequencyCounter.hpp
 )
 set(Sources
-    Example.cpp
+    BitStream.cpp
+    FrequencyCounter.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
