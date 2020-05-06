@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe    -g   -std=gnu++11 -o CMakeFiles\\Huffman.dir\\Example.cpp.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\Example.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/Example.cpp"
+},
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googlemock",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock_main.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googlemock",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gmock.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googlemock\\src\\gmock-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gtest.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest-all.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g   -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\googletest\\googletest\\src\\gtest_main.cc\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test",
+  "command": "C:\\MinGW\\bin\\mingw32-g++.exe   @CMakeFiles/ExampleTests.dir/includes_CXX.rsp -g   -std=gnu++11 -o CMakeFiles\\ExampleTests.dir\\ExampleTests.cpp.obj -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\ExampleTests.cpp\"",
+  "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/ExampleTests.cpp"
+}
+]
