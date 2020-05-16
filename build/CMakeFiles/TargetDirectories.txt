@@ -27,10 +27,10 @@ C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googl
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest/CMakeFiles/install/local.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest/CMakeFiles/install.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/googletest/googletest/CMakeFiles/edit_cache.dir
+C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/list_install_components.dir
+C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/HuffmanTest.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/rebuild_cache.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/test.dir
-C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/BitStreamTests.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/install/local.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/install.dir
 C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/edit_cache.dir
-C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/CMakeFiles/list_install_components.dir

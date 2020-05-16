@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20200513-0551-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.17.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-3BQL144"
+	OSRelease=" Professional"
+	OSVersion=" (Build 18363)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="37556"
+	TotalPhysicalMemory="32692"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4008"
+	>
+	<Testing>
+		<StartDateTime>May 12 23:33 Pacific Daylight Time</StartDateTime>
+		<StartTestTime>1589351618</StartTestTime>
+		<TestList>
+			<Test>./test/HuffmanTest</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>HuffmanTest</Name>
+			<Path>./test</Path>
+			<FullName>./test/HuffmanTest</FullName>
+			<FullCommandLine>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\HuffmanTest.exe"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0318389</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\HuffmanTest.exe"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyVU01PAjEQvfdXzE1IpBHUmGzSAyoYo1ED6AWJKcuATbrt2nZF/r2zWzQsgaBzmE7TNx9vZjoojFFmAZlUptGEubMZcP66sHahMaAPm6Z36euitN5KOE9TNha/MoHBOtYplBgfg3WqC/hC0cnZuPUrE7jRdip1BKD5VM6aDA2BMbSKfAvcjrgq6KUKw+BQZqMyERvD4PkBKplsvXFt5ayvNBIoyuPdfhA0TiDzzb8mjnAINkjdZHWvzmYT+g4/CjTp6soWJqArvetV70LwK2t8cEUarGNSSDhnUzElXaNyyBMa7cjpYLoBrls1L1thczSs5EAj7TAQAGfsSBxBuyqlw1Ag2e/inWwlFGkvPOkgAiGXYkmvK7EiTftUrc+upJ6ned5oXzQTQOesS+BF6oKyzxOYS+2RAXTTUEj9c+995ZgGnCVABKux9ru3973rg7R2DvfgmGL7ds943/4GlK41s0tT/x/7/wU4aXg9E/F66g6Hkde6Sl5nGxfzGLTy1A+YorbL5B8NYYxCrLGj3nDEvgGvykcH====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 12 23:33 Pacific Daylight Time</EndDateTime>
+		<EndTestTime>1589351618</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

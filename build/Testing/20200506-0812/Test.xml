@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="4008"
 	>
 	<Testing>
-		<StartDateTime>May 06 02:38 Pacific Daylight Time</StartDateTime>
-		<StartTestTime>1588757923</StartTestTime>
+		<StartDateTime>May 06 14:37 Pacific Daylight Time</StartDateTime>
+		<StartTestTime>1588801044</StartTestTime>
 		<TestList>
 			<Test>./test/BitStreamTests</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\BitStreamTests.exe"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0372816</Value>
+					<Value>0.0092742</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -48,12 +48,12 @@
 					<Value>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\BitStreamTests.exe"</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyNkDELwjAQhff8ihvt0IDuDoriIKi0OtUisZ4l0Fw0uerftzVFrFDwTY+7j3e8S2oiTSUYpWkUwdVZA1IeS2vLChk9f1vvimPZulOLy6IQ2fSjHJIuawwtE7I672vNKEUWf5TDqrJnVYU90kM7SwapYZHj+vYDf2fONafsUJl9M/Iig+Swgbfyn51M77Vy2CBB2/UQAqMJGB/9ezTgwJZVFYn/ejEqF1/sk/pfG/oWOEWyf6epsZul6XLRNg2sFC8WRY5x====</Value>
+					<Value encoding="base64" compression="gzip">eJyN0/lP1EAcBfB4a73vW8ebVak7M22nqE8RFFQUdAH9AYhZyrA02W2hB8p/77xdQ4Bo4vzwOpu+76ebZtqqsyzNOqLXTrOhhlgt8p7w/cVOnne6trJltXNbFslih7sfrPtJ4i1gey2J1h9LC3bKAab6P0RZp+7qewvD22tJTHbz5XZ3ULDZZlrkWc9mrmyr4Xp9T1kOen10LK1mq8K2e3N8kLcgWvPTor+W9tzzZzfqdmFdZbBmpv5VEUNN0Ssb//vQQV1UedXuNrzdU2rnC5go7EZts2RrPK+zyhac3v2P/9bwx/OsrIo6qfLC89AUTW8fpMv9UC4PQLs8iMDlIYQuDyNyeQTG5VHELo9hxKUHyeHjkJw+Acnxk5CcPwVJ4DQkhTOQJM5C0jgHSeQ8JJULUFQuQlG5BEXlMhSVK1BUrkJRuQZF5ToUlRtQVG5CUbkFTeU2NBUBTeUONJW70FTuQVO5D03lATSVh9BUHkFTGUJApYGAymMEVJ4goPIUAZVhBFR8BFSeIaDSREBFIqCiEFLRCKkECKmECKlECKkYhFRihFRGEFJ5jpDKC4RUXiKiAkRUXiGi8hoRlVFEVN4gojKGiMo4IipvEVF5h4jKBAyVSRgq72GofICh8hGGyhQMlU8wVD7DUJmGoTIDQ+ULYipfEVNpIaYyi5jKHGIq84ipfENM5Tti4/u+N7dmRcFjnq+Kyu37Rz6vq/W6Ej/bpbvXyzftiijTLLEidd/qr8TalXJQXnOja3l3hdOy6Y7C8lb/S/8NIbAMEw==</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 06 02:38 Pacific Daylight Time</EndDateTime>
-		<EndTestTime>1588757923</EndTestTime>
+		<EndDateTime>May 06 14:37 Pacific Daylight Time</EndDateTime>
+		<EndTestTime>1588801044</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

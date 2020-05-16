@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20200507-0151-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.17.2"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-3BQL144"
+	OSRelease=" Professional"
+	OSVersion=" (Build 18363)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="37556"
+	TotalPhysicalMemory="32692"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="4008"
+	>
+	<Testing>
+		<StartDateTime>May 06 18:51 Pacific Daylight Time</StartDateTime>
+		<StartTestTime>1588816273</StartTestTime>
+		<TestList>
+			<Test>./test/HuffmanTest</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>HuffmanTest</Name>
+			<Path>./test</Path>
+			<FullName>./test/HuffmanTest</FullName>
+			<FullCommandLine>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\HuffmanTest.exe"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0089636</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>"C:\Users\robin\Google Drive\SFU\Computing Science\Huffman\build\test\HuffmanTest.exe"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkk1PwzAMhu/5FT6uh0YwxLEHGIwDEqAWTl2F0sxUkVqH5QPEv6dpR7VOK50P+VCe129sOfVEiipohKJFBB9GN8D5ptK6qtGhdYdHa+SmCqf3gHMpWZ4MUUC6z3UFgbF9smV3AetVu3OWx0MU8FDrUtQ9gPSljKYGqYXRxf7zCL7suS7prXKZMyia12DEckjfnqCL4uiNZzsvDLZIH8+PUwgsLqCx0bmmPQ5OO1FHbKxaHjZgbXDnkeTPSntyaIJ6/ONTBF9pss546bRhIhFwzcqkbNdRIXPKoaZZuxTFdq1qPCP/H3qyYbOl/9e3qXlwKEy81d80nrfpOQMjiI+d2rpebrLs/i60YK/k7BdGb/Rp====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>May 06 18:51 Pacific Daylight Time</EndDateTime>
+		<EndTestTime>1588816273</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

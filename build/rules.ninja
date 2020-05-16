@@ -118,7 +118,7 @@ rule CXX_STATIC_LIBRARY_LINKER__gtest_main_RelWithDebInfo
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__BitStreamTests_RelWithDebInfo
+rule CXX_COMPILER__HuffmanTest_RelWithDebInfo
   deps = msvc
   command = C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx64\x86\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
@@ -127,7 +127,7 @@ rule CXX_COMPILER__BitStreamTests_RelWithDebInfo
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__BitStreamTests_RelWithDebInfo
+rule CXX_EXECUTABLE_LINKER__HuffmanTest_RelWithDebInfo
   command = cmd.exe /C "$PRE_LINK && "C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x64\mt.exe --manifests $MANIFESTS -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx64\x86\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0  $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

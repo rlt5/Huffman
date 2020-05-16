@@ -1,0 +1,57 @@
+Start testing: May 12 23:33 Pacific Daylight Time
+----------------------------------------------------------
+1/1 Testing: HuffmanTest
+1/1 Test: HuffmanTest
+Command: "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test/HuffmanTest.exe"
+Directory: C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test
+"HuffmanTest" start time: May 12 23:33 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from ..\googletest\googletest\src\gtest_main.cc
+[==========] Running 3 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from BitStreamTests
+[ RUN      ] BitStreamTests.loadFile
+[       OK ] BitStreamTests.loadFile (0 ms)
+[----------] 1 test from BitStreamTests (0 ms total)
+
+[----------] 2 tests from FrequencyCounterTest
+[ RUN      ] FrequencyCounterTest.Constructor
+a=a 5
+b=b 5
+[       OK ] FrequencyCounterTest.Constructor (1 ms)
+[ RUN      ] FrequencyCounterTest.ReadFile
+file open
+testing2
+ =  4
+'=' 1
+a=a 2
+e=e 1
+h=h 2
+i=i 2
+s=s 2
+t=t 4
+w=w 1
+y=y 1
+..\test\FrequencyCounterTests.cpp(17): error: Value of: false
+  Actual: false
+Expected: true
+[  FAILED  ] FrequencyCounterTest.ReadFile (0 ms)
+[----------] 2 tests from FrequencyCounterTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test suites ran. (1 ms total)
+[  PASSED  ] 2 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] FrequencyCounterTest.ReadFile
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"HuffmanTest" end time: May 12 23:33 Pacific Daylight Time
+"HuffmanTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 12 23:33 Pacific Daylight Time

@@ -525,6 +525,57 @@ build googletest\googletest\edit_cache: phony googletest\googletest\CMakeFiles\e
 
 
 #############################################
+# Utility command for list_install_components
+
+build test\list_install_components: phony
+
+# =============================================================================
+# Object build statements for EXECUTABLE target HuffmanTest
+
+
+#############################################
+# Order-only phony target for HuffmanTest
+
+build cmake_object_order_depends_target_HuffmanTest: phony || cmake_object_order_depends_target_Huffman cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test\CMakeFiles\HuffmanTest.dir\BitStreamTests.cpp.obj: CXX_COMPILER__HuffmanTest_RelWithDebInfo ..\test\BitStreamTests.cpp || cmake_object_order_depends_target_HuffmanTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
+  INCLUDES = -I..\googletest\googletest\include -I..\googletest\googletest
+  OBJECT_DIR = test\CMakeFiles\HuffmanTest.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\HuffmanTest.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\HuffmanTest.dir\
+  TARGET_PDB = test\HuffmanTest.pdb
+
+build test\CMakeFiles\HuffmanTest.dir\FrequencyCounterTests.cpp.obj: CXX_COMPILER__HuffmanTest_RelWithDebInfo ..\test\FrequencyCounterTests.cpp || cmake_object_order_depends_target_HuffmanTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
+  INCLUDES = -I..\googletest\googletest\include -I..\googletest\googletest
+  OBJECT_DIR = test\CMakeFiles\HuffmanTest.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\HuffmanTest.dir
+  TARGET_COMPILE_PDB = test\CMakeFiles\HuffmanTest.dir\
+  TARGET_PDB = test\HuffmanTest.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target HuffmanTest
+
+
+#############################################
+# Link the executable test\HuffmanTest.exe
+
+build test\HuffmanTest.exe: CXX_EXECUTABLE_LINKER__HuffmanTest_RelWithDebInfo test\CMakeFiles\HuffmanTest.dir\BitStreamTests.cpp.obj test\CMakeFiles\HuffmanTest.dir\FrequencyCounterTests.cpp.obj | lib\gtest_main.lib Huffman.lib lib\gtest.lib || Huffman.lib lib\gtest.lib lib\gtest_main.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\gtest_main.lib  Huffman.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = test\CMakeFiles\HuffmanTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\CMakeFiles\HuffmanTest.dir\
+  TARGET_FILE = test\HuffmanTest.exe
+  TARGET_IMPLIB = test\HuffmanTest.lib
+  TARGET_PDB = test\HuffmanTest.pdb
+
+
+#############################################
 # Utility command for rebuild_cache
 
 build test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
@@ -546,51 +597,6 @@ build test\CMakeFiles\test.util: CUSTOM_COMMAND
   restat = 1
 
 build test\test: phony test\CMakeFiles\test.util
-
-# =============================================================================
-# Object build statements for EXECUTABLE target BitStreamTests
-
-
-#############################################
-# Order-only phony target for BitStreamTests
-
-build cmake_object_order_depends_target_BitStreamTests: phony || cmake_object_order_depends_target_Huffman cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build test\CMakeFiles\BitStreamTests.dir\BitStreamTests.cpp.obj: CXX_COMPILER__BitStreamTests_RelWithDebInfo ..\test\BitStreamTests.cpp || cmake_object_order_depends_target_BitStreamTests
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
-  INCLUDES = -I..\googletest\googletest\include -I..\googletest\googletest
-  OBJECT_DIR = test\CMakeFiles\BitStreamTests.dir
-  OBJECT_FILE_DIR = test\CMakeFiles\BitStreamTests.dir
-  TARGET_COMPILE_PDB = test\CMakeFiles\BitStreamTests.dir\
-  TARGET_PDB = test\BitStreamTests.pdb
-
-build test\CMakeFiles\BitStreamTests.dir\FrequencyCounterTests.cpp.obj: CXX_COMPILER__BitStreamTests_RelWithDebInfo ..\test\FrequencyCounterTests.cpp || cmake_object_order_depends_target_BitStreamTests
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
-  INCLUDES = -I..\googletest\googletest\include -I..\googletest\googletest
-  OBJECT_DIR = test\CMakeFiles\BitStreamTests.dir
-  OBJECT_FILE_DIR = test\CMakeFiles\BitStreamTests.dir
-  TARGET_COMPILE_PDB = test\CMakeFiles\BitStreamTests.dir\
-  TARGET_PDB = test\BitStreamTests.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target BitStreamTests
-
-
-#############################################
-# Link the executable test\BitStreamTests.exe
-
-build test\BitStreamTests.exe: CXX_EXECUTABLE_LINKER__BitStreamTests_RelWithDebInfo test\CMakeFiles\BitStreamTests.dir\BitStreamTests.cpp.obj test\CMakeFiles\BitStreamTests.dir\FrequencyCounterTests.cpp.obj | lib\gtest_main.lib Huffman.lib lib\gtest.lib || Huffman.lib lib\gtest.lib lib\gtest_main.lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG
-  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\gtest_main.lib  Huffman.lib  lib\gtest.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = test\CMakeFiles\BitStreamTests.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = test\CMakeFiles\BitStreamTests.dir\
-  TARGET_FILE = test\BitStreamTests.exe
-  TARGET_IMPLIB = test\BitStreamTests.lib
-  TARGET_PDB = test\BitStreamTests.pdb
 
 
 #############################################
@@ -628,20 +634,14 @@ build test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
 
 build test\edit_cache: phony test\CMakeFiles\edit_cache.util
 
-
-#############################################
-# Utility command for list_install_components
-
-build test\list_install_components: phony
-
 # =============================================================================
 # Target aliases.
 
-build BitStreamTests: phony test\BitStreamTests.exe
-
-build BitStreamTests.exe: phony test\BitStreamTests.exe
-
 build Huffman: phony Huffman.lib
+
+build HuffmanTest: phony test\HuffmanTest.exe
+
+build HuffmanTest.exe: phony test\HuffmanTest.exe
 
 build gmock: phony lib\gmock.lib
 
@@ -695,7 +695,7 @@ build googletest\googletest\all: phony lib\gtest.lib lib\gtest_main.lib
 #############################################
 # Folder: C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build/test
 
-build test\all: phony test\BitStreamTests.exe
+build test\all: phony test\HuffmanTest.exe
 
 # =============================================================================
 # Built-in targets

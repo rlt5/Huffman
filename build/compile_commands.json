@@ -55,13 +55,13 @@
 
 {
   "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
-  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\BitStreamTests.dir\\BitStreamTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\BitStreamTests.cpp\"",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\HuffmanTest.dir\\BitStreamTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\BitStreamTests.cpp\"",
   "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/BitStreamTests.cpp"
 },
 
 {
   "directory": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/build",
-  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\BitStreamTests.dir\\FrequencyCounterTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\FrequencyCounterTests.cpp\"",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1425~1.286\\bin\\Hostx64\\x86\\cl.exe  /nologo /TP  -I..\\googletest\\googletest\\include -I..\\googletest\\googletest  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG   /Fotest\\CMakeFiles\\HuffmanTest.dir\\FrequencyCounterTests.cpp.obj /FdTARGET_COMPILE_PDB /FS -c \"C:\\Users\\robin\\Google Drive\\SFU\\Computing Science\\Huffman\\test\\FrequencyCounterTests.cpp\"",
   "file": "C:/Users/robin/Google Drive/SFU/Computing Science/Huffman/test/FrequencyCounterTests.cpp"
 }
 ]

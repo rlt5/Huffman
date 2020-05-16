@@ -1,2 +1,3 @@
-BitStreamTests 3 0.0261824
+BitStreamTests 5 0.0194688
+HuffmanTest 2 0.0200714
 ---
