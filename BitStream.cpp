@@ -27,7 +27,8 @@ void BitStream::loadFile(string inputFileName){
         buffer = new char[bufferLength];
         is.read(buffer,bufferLength);
         is.close();
-        // std::cout.write(buffer, bufferLength);
+
+        fc.countFrequency(buffer, bufferLength);
     }
 }
 
