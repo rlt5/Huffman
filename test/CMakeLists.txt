@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-set(This BitStreamTests)
+set(This HuffmanTest)
 
 set(Sources
     BitStreamTests.cpp
