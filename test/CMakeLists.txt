@@ -5,6 +5,7 @@ set(This HuffmanTest)
 set(Sources
     BitStreamTests.cpp
     FrequencyCounterTests.cpp
+    HuffmanTreeTest.cpp
 )
 
 add_executable(${This} ${Sources})

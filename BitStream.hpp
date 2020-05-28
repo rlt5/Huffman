@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "HuffmanTree.hpp"
 #include "FrequencyCounter.hpp"
 
 
@@ -17,6 +18,7 @@ class BitStream
         void loadFile(string inputFileName); // This should call Frequency Counter
         char* getBuffer();
         int getBufferLength();
+        FrequencyCounter getFc();
         // void setBuffer(Object buffer);
 
     private:
@@ -25,8 +27,6 @@ class BitStream
         int currentByte;
         int bitPos;
         FrequencyCounter fc;
-
-
         // HuffmanTree huffmanTree;
 };
 

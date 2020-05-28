@@ -18,8 +18,11 @@ class FrequencyCounter
         void FrequencyCounterPrint();
         void countFrequency(char* buffer, uint32_t size);
         map<char, uint32_t> getTable();
+        int getNumberOfCharacters();
+        
     private:
         map<char, uint32_t> frequencyTable;
+        int numberOfCharacters;
 };
 
 #endif /* FREQUENCYCOUNTER_HPP */

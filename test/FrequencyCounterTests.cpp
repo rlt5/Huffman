@@ -1,4 +1,5 @@
 #include "../FrequencyCounter.hpp"
+#include "../BitStream.hpp"
 
 #include <gtest/gtest.h>
 
@@ -39,5 +40,23 @@ TEST(FrequencyCounterTest, countFrequency){
     EXPECT_TRUE(ft['a'] == 5);
     EXPECT_TRUE(ft['b'] == 5);
     // fc.FrequencyCounterPrint();
+    
+    BitStream bitStream('c');
+    bitStream.loadFile("Muppets.txt");
+    std::string fileContents(bitStream.getBuffer(),bitStream.getBufferLength());
+    fc.countFrequency(bitStream.getBuffer(),bitStream.getBufferLength());
+    ft = fc.getTable();
+    EXPECT_TRUE(ft['t'] == 4 );
+    EXPECT_TRUE(ft[' '] == 4 );
+    EXPECT_TRUE(ft['a'] == 2 );
+    EXPECT_TRUE(ft['h'] == 2 );
+    EXPECT_TRUE(ft['i'] == 2 );
+    EXPECT_TRUE(ft['s'] == 2 );
+    EXPECT_TRUE(ft['\''] == 1 );
+    EXPECT_TRUE(ft['e'] == 1 );
+    EXPECT_TRUE(ft['w'] == 1 );
+    EXPECT_TRUE(ft['y'] == 1 );
+    fc.FrequencyCounterPrint();
+
 }
 

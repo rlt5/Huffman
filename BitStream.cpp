@@ -10,6 +10,10 @@ BitStream::BitStream(char action){
     ;
 }
 
+FrequencyCounter BitStream::getFc(){
+    return fc;
+}
+
 
 
 void BitStream::loadFile(string inputFileName){

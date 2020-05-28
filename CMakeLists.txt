@@ -15,10 +15,12 @@ add_subdirectory(googletest)
 set(Headers
     BitStream.hpp
     FrequencyCounter.hpp
+    HuffmanTree.hpp
 )
 set(Sources
     BitStream.cpp
     FrequencyCounter.cpp
+    HuffmanTree.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})

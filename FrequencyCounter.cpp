@@ -1,47 +1,26 @@
 #include "FrequencyCounter.hpp"
 
-// FrequencyCounter::FrequencyCounter(char* buffer, uint32_t size){
-
-//     for ( uint32_t i = 0; i < size; i++ ){
-//         frequencyTable[buffer[i]]++;
-//     }
-
-// }
-
-FrequencyCounter::FrequencyCounter(){
-    ;
-}
+FrequencyCounter::FrequencyCounter(){}
 
 void FrequencyCounter::countFrequency(char* buffer, uint32_t size){
     frequencyTable.clear();
+    numberOfCharacters = 0;
     for ( uint32_t i = 0; i < size; i++ ){
         frequencyTable[buffer[i]]++;
+        numberOfCharacters++;
     }
 }
-
-// FrequencyCounter::FrequencyCounter(string inputFilename){
-//     ifstream inputFile;
-//     string line;
-//     inputFile.open(inputFilename);
-//     if ( inputFile.is_open() ){
-//         cout << "file open" << endl;
-//         while ( getline( inputFile, line) ){
-//             for ( int c : line ){
-//                 frequencyTable[c]++;
-//             }
-//         }
-//         inputFile.close();
-//     }
-//     cout << "testing2" << endl;
-// }
 
 map<char, uint32_t> FrequencyCounter::getTable(){
     return frequencyTable;
 }
 
+int FrequencyCounter::getNumberOfCharacters(){
+    return numberOfCharacters;
+}
+
 void FrequencyCounter::FrequencyCounterPrint(){
     for ( auto element : frequencyTable ){
-        cout << (char)element.first << "=" << element.first  << " " << element.second << endl;
+        cout << (char)element.first << "=" << (int)element.first  << " " << element.second << endl;
     }
-        
 }
