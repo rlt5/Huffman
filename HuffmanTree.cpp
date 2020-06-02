@@ -10,25 +10,25 @@ bool HuffmanNode::operator() (const HuffmanNode* l, const HuffmanNode* r) const{
 void HuffmanNode::print(){
     // std::cout   << "char="      << this->character;
     if ( this->character < 256)
-        std::cout   << "char="      << "\033[31m" << (char)this->character << "\033[0m";
+        std::cout   << "char="  << "\033[31m" << std::setw(3) << (char)this->character << "\033[0m";
     else 
-        std::cout   << "char="      << "\033[31m" << "T" << (int)this->character-255 << "\033[0m";
+        std::cout   << "char="     << std::setw(3)  << "\033[31m" << std::setw(2) << "T" << (int)this->character-255 << "\033[0m";
     std::cout   << " weight="   << this->weight;
     if (this->left) {
         if ( this->left->character < 256 ){
-            std::cout   << " left="   << (char)this->left->character;
+            std::cout   << " left="   <<  (char)this->left->character;
         } else 
             std::cout   << " left="   << "T" << (int)this->left->character-255;
     } else
         std::cout   << " left=NULL";
     if (this->right) {
         if ( this->right->character < 256 ){
-            std::cout   << " right="   << (char)this->right->character;
+            std::cout   << " right="    << (char)this->right->character;
         } else 
-            std::cout   << " right="   << "T" << (int)this->right->character-255;
+            std::cout   << " right="    << "T" << (int)this->right->character-255;
     }
     if (this->parent) 
-        std::cout   << " parent="   << this->parent->character;
+        std::cout   << " parent="    << this->parent->character;
     else
         std::cout   << " parent=NULL";
     std::cout   << std::endl;
@@ -43,6 +43,7 @@ HuffmanTree::HuffmanTree(char action, std::map<char, uint32_t> frequencyTable ){
         HuffmanNode* huffNode = new HuffmanNode(iter.first,iter.second);
         pq.push(huffNode);
     }
+    
 
     // Building the Tree
     int i = 256;
@@ -58,6 +59,8 @@ HuffmanTree::HuffmanTree(char action, std::map<char, uint32_t> frequencyTable ){
     }
     root = pq.top();
 }
+
+
 
 void HuffmanTree::printPQ(){
     std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode >* pqCopy = new std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode >();
@@ -76,22 +79,43 @@ HuffmanNode* HuffmanTree::getRoot(){
 }
 
 // Print the tree in order using a STACK
-void HuffmanTree::printTree(HuffmanNode* root){
-    std::queue<HuffmanNode*> s;
-    s.push(root);
-    std::cout << std::endl << "HuffmanTree printTree: " << std::endl;
-    while ( !s.empty()){
-        HuffmanNode* tempNode = s.front();
-        s.pop();
+void HuffmanTree::printTreeByLevel(){
+    std::queue<HuffmanNode*> q;
+    q.push(this->root);
+    std::cout << std::endl << "HuffmanTree printPreOrderTraversal: " << std::endl;
+    while ( !q.empty()){
+        HuffmanNode* tempNode = q.front();
+        q.pop();
         tempNode->print();
         if ( tempNode->left != NULL ){
-            s.push(tempNode->left);
+            q.push(tempNode->left);
         }
         if ( tempNode->right != NULL ){
-            s.push(tempNode->right);
+            q.push(tempNode->right);
         }
     }
 }
 
+int* HuffmanTree::getCodeTable(){
+    return codeTable;
+}
+
+void HuffmanTree::printInOrderTraversal(){
+    std::stack<HuffmanNode*> s;
+    std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
+    HuffmanNode* currentNode = this->root;
+    while ( currentNode || !s.empty()){
+        while ( currentNode ){
+            s.push(currentNode);
+            currentNode = currentNode->left;
+        }
+
+        currentNode = s.top();
+        s.pop();
+        currentNode->print();
+        currentNode = currentNode->right;
+        
+    }
+}
 
 

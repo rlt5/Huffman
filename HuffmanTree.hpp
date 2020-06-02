@@ -2,6 +2,7 @@
 #define HUFFMANTREE_HPP
 
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <string>
 #include <queue>
@@ -77,15 +78,19 @@ class HuffmanTree
     public:
         HuffmanTree();
         HuffmanTree(char action, std::map<char, uint32_t> frequencyTable );
-        void printTree(HuffmanNode* root);
+        void printTreeByLevel();
+        void printInOrderTraversal();
         void printPQ();
         HuffmanNode* getRoot();
+        int* getCodeTable();
         
     private:
         HuffmanNode* root;
-        int size();
         std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode > pq;
         std::map<char, uint32_t> frequencyTable;
+        int codeTable[256] = {0};
+        
+
 };
 
 #endif /* HUFFMANTREE_HPP */
