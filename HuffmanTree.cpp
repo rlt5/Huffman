@@ -109,12 +109,26 @@ void HuffmanTree::printInOrderTraversal(){
             s.push(currentNode);
             currentNode = currentNode->left;
         }
-
         currentNode = s.top();
         s.pop();
         currentNode->print();
         currentNode = currentNode->right;
-        
+    }
+}
+
+void HuffmanTree::printLeavesInOrder(){
+    std::stack<HuffmanNode*> s;
+    std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
+    HuffmanNode* currentNode = this->root;
+    while ( currentNode || !s.empty()){
+        while ( currentNode ){
+            s.push(currentNode);
+            currentNode = currentNode->left;
+        }
+        currentNode = s.top();
+        s.pop();
+        if ( currentNode->left == nullptr && currentNode->right == nullptr ) currentNode->print();
+        currentNode = currentNode->right;
     }
 }
 

@@ -28,7 +28,7 @@ TEST(HuffmanTreeTest, HuffmanTreePrintTests){
     HuffmanTree HuffmanTree('c',fc.getTable());
     HuffmanTree.printTreeByLevel();
     HuffmanTree.printInOrderTraversal();
-    
+    HuffmanTree.printLeavesInOrder();
 }
 
 

@@ -80,6 +80,7 @@ class HuffmanTree
         HuffmanTree(char action, std::map<char, uint32_t> frequencyTable );
         void printTreeByLevel();
         void printInOrderTraversal();
+        void printLeavesInOrder();
         void printPQ();
         HuffmanNode* getRoot();
         int* getCodeTable();
@@ -89,6 +90,7 @@ class HuffmanTree
         std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode > pq;
         std::map<char, uint32_t> frequencyTable;
         int codeTable[256] = {0};
+        // void createCodeTable();
         
 
 };
