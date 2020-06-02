@@ -83,15 +83,14 @@ class HuffmanTree
         void printLeavesInOrder();
         void printPQ();
         HuffmanNode* getRoot();
-        std::vector<std::string> getCodeTable();
+        std::string* getCodeTable();
         
     private:
         HuffmanNode* root;
         std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode > pq;
         std::map<char, uint32_t> frequencyTable;
-        std::vector<std::string> codeTable;
+        std::string codeTable[256];
         void createCodeTable();
-        
 
 };
 

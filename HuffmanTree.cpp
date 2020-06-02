@@ -44,6 +44,9 @@ HuffmanTree::HuffmanTree(char action, std::map<char, uint32_t> frequencyTable ){
         pq.push(huffNode);
     }
     
+    for ( int i = 0; i < 256; i++ ){
+        codeTable[i] = "";
+    }
 
     // Building the Tree
     int i = 256;
@@ -96,7 +99,7 @@ void HuffmanTree::printTreeByLevel(){
     }
 }
 
-std::vector<std::string> HuffmanTree::getCodeTable(){
+std::string* HuffmanTree::getCodeTable(){
     return codeTable;
 }
 
@@ -132,20 +135,20 @@ void HuffmanTree::printLeavesInOrder(){
     }
 }
 
-void HuffmanTree::createCodeTable(){
-    std::stack<HuffmanNode*> s;
-    std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
-    HuffmanNode* currentNode = this->root;
-    uint32_t code = 0;
-    while ( currentNode || !s.empty()){
-        while ( currentNode ){
-            s.push(currentNode);
-            currentNode = currentNode->left;
-            code <<= 1;
-        }
-        currentNode = s.top();
-        s.pop();
-        if ( currentNode->left == nullptr && currentNode->right == nullptr ) currentNode->print();
-        currentNode = currentNode->right;
-    }
-}
+// void HuffmanTree::createCodeTable(){
+//     std::stack<HuffmanNode*> s;
+//     std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
+//     HuffmanNode* currentNode = this->root;
+//     uint32_t code = 0;
+//     while ( currentNode || !s.empty()){
+//         while ( currentNode ){
+//             s.push(currentNode);
+//             currentNode = currentNode->left;
+//             code <<= 1;
+//         }
+//         currentNode = s.top();
+//         s.pop();
+//         if ( currentNode->left == nullptr && currentNode->right == nullptr ) currentNode->print();
+//         currentNode = currentNode->right;
+//     }
+// }
