@@ -28,16 +28,16 @@ TEST(HuffmanTreeTest, HuffmanTreeConstructorTest){
             ASSERT_TRUE(codeTable[i].empty()) << i ;
             }
     }
-    ASSERT_TRUE(codeTable['a'].compare("000") == 0);
-    ASSERT_TRUE(codeTable['h'].compare("001") == 0);
-    ASSERT_TRUE(codeTable['i'].compare("010") == 0);
-    ASSERT_TRUE(codeTable['s'].compare("011") == 0);
-    ASSERT_TRUE(codeTable['\''].compare("1000") == 0);
-    ASSERT_TRUE(codeTable['e'].compare("1001") == 0);
-    ASSERT_TRUE(codeTable['w'].compare("1010") == 0);
-    ASSERT_TRUE(codeTable['y'].compare("1011") == 0);
-    ASSERT_TRUE(codeTable[' '].compare("110") == 0);
-    ASSERT_TRUE(codeTable['t'].compare("111") == 0);
+    ASSERT_TRUE(codeTable['a'] == "000");
+    ASSERT_TRUE(codeTable['h'] == "001");
+    ASSERT_TRUE(codeTable['i'] == "010");
+    ASSERT_TRUE(codeTable['s'] == "011");
+    ASSERT_TRUE(codeTable['\''] == "1000");
+    ASSERT_TRUE(codeTable['e'] == "1001");
+    ASSERT_TRUE(codeTable['w'] == "1010");
+    ASSERT_TRUE(codeTable['y'] == "1011");
+    ASSERT_TRUE(codeTable[' '] == "110");
+    ASSERT_TRUE(codeTable['t'] == "111");
 }
 
 TEST(HuffmanTreeTest, HuffmanTreePrintTests){
