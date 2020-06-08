@@ -12,16 +12,17 @@
 class BitStream
 {
     public:
-        BitStream(char action);
+        BitStream(int mode);
         // BitStream(char action, string inputFileName, string outputFileName, char buffer[]);
         // void readBit();
-        void loadFile(string inputFileName); // This should call Frequency Counter
+        int loadFile(string inputFileName); // This should call Frequency Counter
         char* getBuffer();
         int getBufferLength();
         FrequencyCounter getFc();
         // void setBuffer(Object buffer);
 
     private:
+        int mode;
         char* buffer;
         int bufferLength;
         int currentByte;

@@ -1,6 +1,7 @@
 #include "BitStream.hpp"
 
-BitStream::BitStream(char action){
+BitStream::BitStream(int mode){
+    this->mode = mode;
     // fstream inputFile;
     // inputFile.open(inputFileName);
     // if ( inputFile.is_open() ){
@@ -16,7 +17,7 @@ FrequencyCounter BitStream::getFc(){
 
 
 
-void BitStream::loadFile(string inputFileName){
+int BitStream::loadFile(string inputFileName){
 
     // https://www.cplusplus.com/reference/istream/istream/seekg/
     std::ifstream is (inputFileName, std::ifstream::binary);
@@ -33,7 +34,10 @@ void BitStream::loadFile(string inputFileName){
         is.close();
 
         fc.countFrequency(buffer, bufferLength);
-    }
+        return 0;
+    } 
+    else 
+        return 1;
 }
 
 char* BitStream::getBuffer(){
