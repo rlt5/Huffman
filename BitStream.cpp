@@ -26,18 +26,19 @@ int BitStream::loadFile(string inputFileName){
         is.seekg (0, is.end);
         bufferLength = is.tellg();
         is.seekg (0, is.beg);
-        if (bufferLength == 0)
-            return;
+        // if (bufferLength == 0)
+        //     return 0;
 
         buffer = new char[bufferLength];
         is.read(buffer,bufferLength);
         is.close();
 
         fc.countFrequency(buffer, bufferLength);
+        this->huffmanTree = HuffmanTree('c',fc.getTable());
+
         return 0;
     } 
-    else 
-        return 1;
+    return 1;
 }
 
 char* BitStream::getBuffer(){
@@ -46,4 +47,8 @@ char* BitStream::getBuffer(){
 
 int BitStream::getBufferLength(){
     return this->bufferLength;
+}
+
+void BitStream::writeToOutputBuffer(){
+
 }
