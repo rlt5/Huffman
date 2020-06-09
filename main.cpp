@@ -1,6 +1,6 @@
 #include <iostream>
+#include <cstring>
 #include "BitStream.hpp"
-#include <gtest/gtest.h>
 #include "util.hpp"
 
 int main(int argc, char* argv[]){
@@ -13,8 +13,8 @@ int main(int argc, char* argv[]){
     
     // Check valid mode input
     int mode = -1;
-    if ( argv[1] == "-c" ) mode == 0;
-    else if ( argv[1] == "-d" ) mode == 1;
+    if ( strcmp(argv[1],"-c") == 0 ) mode = 0;
+    else if ( strcmp(argv[1],"-d") == 0 ) mode = 1;
     else {
         std::cout << "The mode input is incorrect. Please enter either -c for compression or -d for decompression." << std::endl;
         return 0;
