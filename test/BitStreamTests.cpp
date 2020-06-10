@@ -2,11 +2,9 @@
 
 #include <gtest/gtest.h>
 
-// using namespace std;
-
 TEST(BitStreamTests, loadFile){
     ASSERT_TRUE(true);
-    BitStream bitStream(0);
+    BitStream bitStream(BitStream::compression);
     ASSERT_TRUE( bitStream.loadFile("Muppets.txt") == 0 );
     std::string fileContents(bitStream.getBuffer(),bitStream.getBufferLength());
     ASSERT_TRUE( fileContents.compare("that's the way it is") == 0);
@@ -28,4 +26,12 @@ TEST(BitStreamTests, writeToFile){
     BitStream bitStream(0);
     ASSERT_TRUE( bitStream.loadFile("Muppets.txt") == 0 );
     bitStream.writeToFile("outputTest.txt");
+}
+
+TEST(BitStreamTests, decompressionLoadFile){
+    ASSERT_TRUE(true);
+    BitStream bitStream(BitStream::decompression);
+    ASSERT_TRUE( bitStream.loadFile("output.txt") == 0 );
+
+
 }
