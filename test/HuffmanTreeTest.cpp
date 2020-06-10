@@ -6,7 +6,7 @@
 
 TEST(HuffmanTreeTest, HuffmanTreeConstructorTest){
     ASSERT_TRUE(true);
-    BitStream bitStream('c');
+    BitStream bitStream(0);
     bitStream.loadFile("Muppets.txt");
     FrequencyCounter fc = bitStream.getFc();
 
@@ -42,7 +42,7 @@ TEST(HuffmanTreeTest, HuffmanTreeConstructorTest){
 
 TEST(HuffmanTreeTest, HuffmanTreePrintTests){
     ASSERT_TRUE(true);
-    BitStream bitStream('c');
+    BitStream bitStream(0);
     bitStream.loadFile("Muppets.txt");
     FrequencyCounter fc = bitStream.getFc();
 
