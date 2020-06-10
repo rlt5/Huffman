@@ -3,13 +3,13 @@
 
 #include <gtest/gtest.h>
 
-TEST(FrequencyCounterTest, FrequencyCounterPrint){
+TEST(FrequencyCounterTest, print){
     ASSERT_TRUE(true);
     uint32_t size = 10;
     char buffer[] = {'a','b','a','b','a','b','a','b','a','b'};
     FrequencyCounter fc;
     fc.countFrequency(buffer, size);
-    fc.FrequencyCounterPrint();
+    fc.print();
 }
 
 TEST(FrequencyCounterTest, countFrequency){
@@ -42,7 +42,7 @@ TEST(FrequencyCounterTest, countFrequency){
     EXPECT_TRUE(ft['e'] == 1 );
     EXPECT_TRUE(ft['w'] == 1 );
     EXPECT_TRUE(ft['y'] == 1 );
-    fc.FrequencyCounterPrint();
+    fc.print();
 
 }
 

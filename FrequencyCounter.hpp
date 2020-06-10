@@ -15,8 +15,9 @@ class FrequencyCounter
         // FrequencyCounter(char* buffer, uint32_t size);
         // FrequencyCounter(string inputFilename);
         FrequencyCounter();
-        void FrequencyCounterPrint();
+        void print();
         void countFrequency(char* buffer, uint32_t size);
+        void countFrequency(uint32_t numberOfCharacters, char* buffer);
         map<char, uint32_t> getTable();
         int getNumberOfCharacters();
         
