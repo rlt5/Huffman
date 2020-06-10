@@ -77,7 +77,7 @@ class HuffmanTree
 {
     public:
         HuffmanTree();
-        HuffmanTree(char action, std::map<char, uint32_t> frequencyTable );
+        HuffmanTree(std::map<char, uint32_t> frequencyTable );
         void printTreeByLevel();
         void printInOrderTraversal();
         void printLeavesInOrder();

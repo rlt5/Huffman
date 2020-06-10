@@ -10,7 +10,7 @@ TEST(HuffmanTreeTest, HuffmanTreeConstructorTest){
     bitStream.loadFile("Muppets.txt");
     FrequencyCounter fc = bitStream.getFc();
 
-    HuffmanTree HuffmanTree('c',fc.getTable());
+    HuffmanTree HuffmanTree(fc.getTable());
     
     // Initialize codeTable to 0;
     std::string* codeTable = HuffmanTree.getCodeTable();
@@ -46,7 +46,7 @@ TEST(HuffmanTreeTest, HuffmanTreePrintTests){
     bitStream.loadFile("Muppets.txt");
     FrequencyCounter fc = bitStream.getFc();
 
-    HuffmanTree HuffmanTree('c',fc.getTable());
+    HuffmanTree HuffmanTree(fc.getTable());
     HuffmanTree.printTreeByLevel();
     HuffmanTree.printInOrderTraversal();
     HuffmanTree.printLeavesInOrder();

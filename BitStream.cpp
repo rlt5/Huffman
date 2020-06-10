@@ -47,7 +47,7 @@ int BitStream::loadFile(string inputFileName){
             outputBuffer = new char[outputBufferLength];
 
             fc.countFrequency(buffer, bufferLength);
-            this->huffmanTree = new HuffmanTree('c',fc.getTable()); // HuffmanTree creates the codeTable from the FC table
+            this->huffmanTree = new HuffmanTree(fc.getTable()); // HuffmanTree creates the codeTable from the FC table
             writeFCToBuffer();
             writeToOutputBuffer();
             return 0;
@@ -56,7 +56,8 @@ int BitStream::loadFile(string inputFileName){
             outputBuffer = new char[outputBufferLength];
             // std::cout << "Number of Characters in Huffman Coding Table is: " << int(buffer[0]) << std::endl;
             fc.countFrequency(uint32_t(buffer[0]), buffer);
-            fc.print();
+            this->huffmanTree = new HuffmanTree(fc.getTable()); // HuffmanTree creates the codeTable from the FC table
+            // fc.print();
             return 0;
         }
     } 
