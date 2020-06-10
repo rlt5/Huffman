@@ -4,11 +4,10 @@ FrequencyCounter::FrequencyCounter(){}
 
 void FrequencyCounter::countFrequency(char* buffer, uint32_t size){
     frequencyTable.clear();
-    numberOfCharacters = 0;
     for ( uint32_t i = 0; i < size; i++ ){
         frequencyTable[buffer[i]]++;
-        numberOfCharacters++;
     }
+    numberOfCharacters = frequencyTable.size();;
 }
 
 void FrequencyCounter::countFrequency(uint32_t numberOfCharacters, char* buffer){
