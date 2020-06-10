@@ -11,10 +11,10 @@
 
 class BitStream
 {
-    enum mode{compression = 0, decompression = 1, invalid = 2};
 
     public:
 
+        enum mode{compression = 0, decompression = 1, invalid = 2};
         BitStream(int mode);
         // BitStream(char action, string inputFileName, string outputFileName, char buffer[]);
         // void readBit();

@@ -42,16 +42,23 @@ int BitStream::loadFile(string inputFileName){
         is.read(buffer,bufferLength);
         is.close();
 
-        if ( mode == compression ) outputBufferLength = bufferLength + 256 * 2 + 1;
-        else outputBufferLength = bufferLength * 8;
-        
-        outputBuffer = new char[outputBufferLength];
+        if ( mode == compression ){
+            outputBufferLength = bufferLength + 256 * 2 + 1;
+            outputBuffer = new char[outputBufferLength];
 
-        fc.countFrequency(buffer, bufferLength);
-        this->huffmanTree = new HuffmanTree('c',fc.getTable()); // HuffmanTree creates the codeTable from the FC table
-        writeFCToBuffer();
-        writeToOutputBuffer();
-        return 0;
+            fc.countFrequency(buffer, bufferLength);
+            this->huffmanTree = new HuffmanTree('c',fc.getTable()); // HuffmanTree creates the codeTable from the FC table
+            writeFCToBuffer();
+            writeToOutputBuffer();
+            return 0;
+        } else if ( mode == decompression ){
+            outputBufferLength = 1 + 256 * 2 + bufferLength * 8;
+            outputBuffer = new char[outputBufferLength];
+            // std::cout << "Number of Characters in Huffman Coding Table is: " << int(buffer[0]) << std::endl;
+            fc.countFrequency(uint32_t(buffer[0]), buffer);
+            fc.print();
+            return 0;
+        }
     } 
     return 1;
 }
