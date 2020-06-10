@@ -1,4 +1,7 @@
 #include "BitStream.hpp"
+#include <assert.h> 
+
+
 
 BitStream::BitStream(int mode){
     this->mode = mode;
@@ -6,7 +9,7 @@ BitStream::BitStream(int mode){
     this->currentIndex = 0;
     this->currentBit = 7;
     this->huffmanTree = NULL;
-    this->bitBuffer = NULL;
+    this->bitBuffer = 0;
     this->buffer = NULL;
     this->bufferLength;
     this->currentByte;
@@ -31,6 +34,7 @@ int BitStream::loadFile(string inputFileName){
         is.seekg (0, is.end);
         bufferLength = is.tellg();
         is.seekg (0, is.beg);
+        std::cout << inputFileName << " -> " << bufferLength << " bytes" << std::endl;
         if (bufferLength == 0)
             return 0;
 
@@ -38,13 +42,34 @@ int BitStream::loadFile(string inputFileName){
         is.read(buffer,bufferLength);
         is.close();
 
+        if ( mode == compression ) outputBufferLength = bufferLength + 256 * 2 + 1;
+        else outputBufferLength = bufferLength * 8;
+        
+        outputBuffer = new char[outputBufferLength];
+
         fc.countFrequency(buffer, bufferLength);
         this->huffmanTree = new HuffmanTree('c',fc.getTable()); // HuffmanTree creates the codeTable from the FC table
+        writeFCToBuffer();
         writeToOutputBuffer();
         return 0;
     } 
     return 1;
 }
+
+void BitStream::writeFCToBuffer(){
+    outputBuffer[currentIndex] = fc.getNumberOfCharacters();
+    currentIndex++;
+    map<char, uint32_t> frequencyCountTable = fc.getTable();
+    for ( std::pair<char, uint32_t> element : frequencyCountTable ){
+        outputBuffer[currentIndex] = element.first;
+        currentIndex++;
+        outputBuffer[currentIndex] = char(element.second);
+        currentIndex++;
+    }
+    outputBufferLength = fc.getTable().size()*2 + 1;
+    // assert(currentIndex == fc.getTable().size()*2 + 1) ;
+}
+
 
 char* BitStream::getBuffer(){
     return this->buffer;
@@ -60,21 +85,16 @@ void BitStream::writeToOutputBuffer(){
     for ( int i = 0; i < bufferLength; i++ ){
         char currentChar = buffer[i];
         for ( char character : codeTable[currentChar]){
-            std::cout << character;
             writeToBit(character-48);
         }
-        std::cout << ",";
     }
     outputBufferLength = currentIndex;
-    std::cout << std::endl;
-    std::cout << "outputbufferlength = " << outputBufferLength << std::endl;
+    // std::cout << "outputbufferlength = " << outputBufferLength << std::endl;
     // checkLastBit();
 }
 
 
 void BitStream::writeToBit(int bit){
-    // std::cout << "writeToBit" << std::endl;
-    std::cout << currentBit << ",";
     if ( bit ) setNthBit();
     currentBit--;
     if ( currentBit == -1 ){
