@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
     }
     
     // Check valid mode input
-    int mode = -1;
+    int mode = 2;
     if ( strcmp(argv[1],"-c") == 0 ) mode = 0;
     else if ( strcmp(argv[1],"-d") == 0 ) mode = 1;
     else {
