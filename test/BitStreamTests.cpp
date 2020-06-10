@@ -6,7 +6,7 @@
 
 TEST(BitStreamTests, loadFile){
     ASSERT_TRUE(true);
-    BitStream bitStream('c');
+    BitStream bitStream(0);
     ASSERT_TRUE( bitStream.loadFile("Muppets.txt") == 0 );
     std::string fileContents(bitStream.getBuffer(),bitStream.getBufferLength());
     ASSERT_TRUE( fileContents.compare("that's the way it is") == 0);
@@ -21,4 +21,11 @@ TEST(BitStreamTests, loadFile){
 
     ASSERT_TRUE( bitStream.loadFile( "FAKEFILE.txt") == 1 );
 
+}
+
+TEST(BitStreamTests, writeToFile){
+    ASSERT_TRUE(true);
+    BitStream bitStream(0);
+    ASSERT_TRUE( bitStream.loadFile("Muppets.txt") == 0 );
+    bitStream.writeToFile("outputTest.txt");
 }
