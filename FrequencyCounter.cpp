@@ -18,7 +18,7 @@ void FrequencyCounter::countFrequency(uint32_t numberOfCharacters, char* buffer)
     }
 }
 
-map<char, uint32_t> FrequencyCounter::getTable(){
+map<uint32_t, uint32_t> FrequencyCounter::getTable(){
     return frequencyTable;
 }
 
@@ -27,7 +27,8 @@ int FrequencyCounter::getNumberOfCharacters(){
 }
 
 void FrequencyCounter::print(){
+    std::cout << "###### FrequencyCounter print Frequency Table" << std::endl;
     for ( auto element : frequencyTable ){
-        cout << (char)element.first << "=" << (int)element.first  << " " << element.second << endl;
+        cout << (char)element.first << "=" << (uint32_t)element.first  << " " << element.second << endl;
     }
 }

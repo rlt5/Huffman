@@ -15,7 +15,7 @@ class HuffmanNode
 {
 public:
 	
-    int character;
+    uint32_t character;
     uint32_t weight;
     HuffmanNode* right ;
     HuffmanNode* left;
@@ -37,7 +37,7 @@ public:
         this->parent = NULL; 
     }
 
-    HuffmanNode(int character, uint32_t weight){
+    HuffmanNode(uint32_t character, uint32_t weight){
         this->character = character;
         this->weight = weight;
         this->left = NULL;
@@ -45,7 +45,7 @@ public:
         this->parent = NULL;
     }
 
-    HuffmanNode(int character, 
+    HuffmanNode(uint32_t character, 
                 uint32_t weight, 
                 HuffmanNode* left,
                 HuffmanNode* right
@@ -77,19 +77,20 @@ class HuffmanTree
 {
     public:
         HuffmanTree();
-        HuffmanTree(std::map<char, uint32_t> frequencyTable );
+        HuffmanTree(std::map<uint32_t, uint32_t> frequencyTable );
         void printTreeByLevel();
         void printInOrderTraversal();
         void printLeavesInOrder();
         void printPQ();
         void printCodeTable();
+        void printCodeMap();
         HuffmanNode* getRoot();
         std::string* getCodeTable();
         
     private:
         HuffmanNode* root;
         std::priority_queue<HuffmanNode*, std::vector<HuffmanNode*>, HuffmanNode > pq;
-        std::map<char, uint32_t> frequencyTable;
+        std::map<uint32_t, uint32_t> frequencyTable;
         std::string codeTable[256];
         void recursiveCreateCodeTable(std::string code, HuffmanNode* currentNode);
 

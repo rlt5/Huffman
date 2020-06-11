@@ -17,7 +17,7 @@ TEST(FrequencyCounterTest, countFrequency){
     uint32_t size = 10;
     char buffer[] = {'a','b','a','b','a','b','a','b','a','b'}; // 5a 5b
     FrequencyCounter fc;
-    map<char, uint32_t> ft = fc.getTable();
+    map<uint32_t, uint32_t> ft = fc.getTable();
     ASSERT_TRUE(ft.empty());
 
     fc.countFrequency(buffer, size);

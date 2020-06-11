@@ -32,6 +32,36 @@ TEST(BitStreamTests, decompressionLoadFile){
     ASSERT_TRUE(true);
     BitStream bitStream(BitStream::decompression);
     ASSERT_TRUE( bitStream.loadFile("output.txt") == 0 );
+    HuffmanTree* huffmanTree = bitStream.getHuffmanTree();
+    // huffmanTree->printCodeTable();
+}
 
+TEST(BitStreamTests, compressAndDecompressSmallFile){
+    ASSERT_TRUE(true);
+    BitStream cbitStream(BitStream::compression);
+    ASSERT_TRUE( cbitStream.loadFile("Muppets.txt") == 0 );
+    cbitStream.writeToFile("cMuppets.txt");
+    cbitStream.getFc().print();
+    cbitStream.getHuffmanTree()->printCodeMap();
+
+    BitStream dbitStream(BitStream::decompression);
+    ASSERT_TRUE( dbitStream.loadFile("cMuppets.txt") == 0 );
+    dbitStream.writeToFile("dMuppets.txt");
+    dbitStream.getHuffmanTree()->printCodeMap();
+
+}
+
+TEST(BitStreamTests, compressAndDecompressLargeFile){
+    ASSERT_TRUE(true);
+    BitStream cbitStream(BitStream::compression);
+    ASSERT_TRUE( cbitStream.loadFile("MontyPythonandtheHolyGrail.txt") == 0 );
+    cbitStream.writeToFile("cMontyPythonandtheHolyGrail.txt");
+    cbitStream.getFc().print();
+    cbitStream.getHuffmanTree()->printCodeMap();
+
+    BitStream dbitStream(BitStream::decompression);
+    ASSERT_TRUE( dbitStream.loadFile("cMontyPythonandtheHolyGrail.txt") == 0 );
+    dbitStream.writeToFile("dMontyPythonandtheHolyGrail.txt");
+    dbitStream.getHuffmanTree()->printCodeMap();
 
 }

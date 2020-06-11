@@ -36,7 +36,7 @@ void HuffmanNode::print(){
 
 HuffmanTree::HuffmanTree(){;}
 
-HuffmanTree::HuffmanTree(std::map<char, uint32_t> frequencyTable ){
+HuffmanTree::HuffmanTree(std::map<uint32_t, uint32_t> frequencyTable ){
     
     // Set Up
     for ( auto iter : frequencyTable ){
@@ -86,7 +86,7 @@ HuffmanNode* HuffmanTree::getRoot(){
 void HuffmanTree::printTreeByLevel(){
     std::queue<HuffmanNode*> q;
     q.push(this->root);
-    std::cout << std::endl << "HuffmanTree printPreOrderTraversal: " << std::endl;
+    std::cout << std::endl << "###### HuffmanTree printPreOrderTraversal: " << std::endl;
     while ( !q.empty()){
         HuffmanNode* tempNode = q.front();
         q.pop();
@@ -106,7 +106,7 @@ std::string* HuffmanTree::getCodeTable(){
 
 void HuffmanTree::printInOrderTraversal(){
     std::stack<HuffmanNode*> s;
-    std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
+    std::cout << std::endl << "###### HuffmanTree inOrderTraversal: " << std::endl;
     HuffmanNode* currentNode = this->root;
     while ( currentNode || !s.empty()){
         while ( currentNode ){
@@ -122,7 +122,7 @@ void HuffmanTree::printInOrderTraversal(){
 
 void HuffmanTree::printLeavesInOrder(){
     std::stack<HuffmanNode*> s;
-    std::cout << std::endl << "HuffmanTree inOrderTraversal: " << std::endl;
+    std::cout << std::endl << "###### HuffmanTree inOrderTraversal: " << std::endl;
     HuffmanNode* currentNode = this->root;
     while ( currentNode || !s.empty()){
         while ( currentNode ){
@@ -147,9 +147,18 @@ void HuffmanTree::recursiveCreateCodeTable(std::string code, HuffmanNode* curren
 }
 
 void HuffmanTree::printCodeTable(){
-    std::cout << std::endl << "HuffmanTree printCodeTable: " << std::endl;
+    std::cout << std::endl << "###### HuffmanTree printCodeTable: " << std::endl;
     for ( int i = 0; i < 256; i++ ){
         std::cout << "char= " << "\033[31m" << std::setw(3) << (char)i << "\033[0m" << " code= " << codeTable[i] << std::endl;
     }
 }
+void HuffmanTree::printCodeMap(){
+    std::cout << std::endl << "HuffmanTree printCodeMap: " << std::endl;
+    for ( int i = 0; i < 256; i++ ){
+        if ( codeTable[i].compare("") != 0 ){
+            std::cout << "char= " << "\033[31m" << std::setw(3) << (char)i << "\033[0m" << " code= " << codeTable[i] << std::endl;
+        }
+    }
+}
+
 

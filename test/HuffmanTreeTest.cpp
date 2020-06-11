@@ -40,17 +40,17 @@ TEST(HuffmanTreeTest, HuffmanTreeConstructorTest){
     ASSERT_TRUE(codeTable['t'] == "111");
 }
 
-TEST(HuffmanTreeTest, HuffmanTreePrintTests){
-    ASSERT_TRUE(true);
-    BitStream bitStream(0);
-    bitStream.loadFile("Muppets.txt");
-    FrequencyCounter fc = bitStream.getFc();
+// TEST(HuffmanTreeTest, HuffmanTreePrintTests){
+//     ASSERT_TRUE(true);
+//     BitStream bitStream(0);
+//     bitStream.loadFile("Muppets.txt");
+//     FrequencyCounter fc = bitStream.getFc();
 
-    HuffmanTree HuffmanTree(fc.getTable());
-    HuffmanTree.printTreeByLevel();
-    HuffmanTree.printInOrderTraversal();
-    HuffmanTree.printLeavesInOrder();
-    HuffmanTree.printCodeTable();
-}
+//     HuffmanTree HuffmanTree(fc.getTable());
+//     HuffmanTree.printTreeByLevel();
+//     HuffmanTree.printInOrderTraversal();
+//     HuffmanTree.printLeavesInOrder();
+//     HuffmanTree.printCodeTable();
+// }
 
 

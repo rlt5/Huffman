@@ -29,23 +29,24 @@ class BitStream
     private:
         int mode;
         char* buffer;
-        int bufferLength;
-        int currentByte;
-        int bitPos;
+        uint32_t bufferLength;
         FrequencyCounter fc;
         HuffmanTree* huffmanTree;
         
         char* outputBuffer;
-        int outputBufferLength;
-        void writeToOutputBuffer();
+        uint32_t outputBufferLength;
+        void writeOriginalToOutputBuffer();
+        void writeCompressedToOutputBuffer();
 
-        int currentIndex;
+        uint32_t currentIndex;
         int currentBit;
         char bitBuffer;
         void writeToBit(int bit);
         void setNthBit();
         int checkLastBit();
         void writeFCToBuffer();
+
+        void printOutputBuffer();
 
 };
 
