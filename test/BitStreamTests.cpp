@@ -26,14 +26,15 @@ TEST(BitStreamTests, writeToFile){
     BitStream bitStream(0);
     ASSERT_TRUE( bitStream.loadFile("Muppets.txt") == 0 );
     bitStream.writeToFile("outputTest.txt");
+    bitStream.getHuffmanTree()->printCodeMap();
 }
 
 TEST(BitStreamTests, decompressionLoadFile){
     ASSERT_TRUE(true);
     BitStream bitStream(BitStream::decompression);
-    ASSERT_TRUE( bitStream.loadFile("output.txt") == 0 );
+    ASSERT_TRUE( bitStream.loadFile("outputTest.txt") == 0 );
     HuffmanTree* huffmanTree = bitStream.getHuffmanTree();
-    // huffmanTree->printCodeTable();
+    huffmanTree->printCodeMap();
 }
 
 TEST(BitStreamTests, compressAndDecompressSmallFile){
@@ -62,6 +63,7 @@ TEST(BitStreamTests, compressAndDecompressLargeFile){
     BitStream dbitStream(BitStream::decompression);
     ASSERT_TRUE( dbitStream.loadFile("cMontyPythonandtheHolyGrail.txt") == 0 );
     dbitStream.writeToFile("dMontyPythonandtheHolyGrail.txt");
+    dbitStream.getFc().print();
     dbitStream.getHuffmanTree()->printCodeMap();
 
 }
