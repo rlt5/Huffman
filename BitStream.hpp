@@ -42,6 +42,7 @@ class BitStream
         int currentBit;
         char bitBuffer;
         void writeToBit(int bit);
+        void readFrequencyTable(int numberOfCharacters, char* buffer);
         void setNthBit();
         int checkLastBit();
         void writeFCToBuffer();
