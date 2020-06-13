@@ -4,8 +4,13 @@ FrequencyCounter::FrequencyCounter(){}
 
 void FrequencyCounter::countFrequency(char* buffer, uint32_t size){
     frequencyTable.clear();
+    int character;
     for ( uint32_t i = 0; i < size; i++ ){
-        frequencyTable[buffer[i]]++;
+        character = int(buffer[i]);
+        if ( character < 0 ) {
+            character += 256;
+        }
+        frequencyTable[character]++;
     }
     numberOfCharacters = frequencyTable.size();;
 }
@@ -16,15 +21,17 @@ void FrequencyCounter::countFrequency(uint32_t numberOfCharacters, char* buffer)
     // print();
     this->numberOfCharacters = numberOfCharacters;
     for ( uint32_t i = 0; i < numberOfCharacters; i++ ){
-        frequencyTable[buffer[1+i*2]] = buffer[2+i*2];
+        frequencyTable[int(buffer[1+i*2])] = int(buffer[2+i*2]);
     }
 }
 
-void FrequencyCounter::addCharacter(char character, uint32_t freq){
-    frequencyTable[character] = freq;
+void FrequencyCounter::addCharacter(int character, uint32_t freq){
+    int charac = int(character);
+    if ( charac < 0 ) charac +=256;
+    frequencyTable[charac] = freq;
 }
 
-map<char, uint32_t> FrequencyCounter::getTable(){
+map<int, uint32_t> FrequencyCounter::getTable(){
     return frequencyTable;
 }
 
@@ -39,6 +46,6 @@ void FrequencyCounter::print(){
     }
 }
 
-void FrequencyCounter::setFreq(char character, uint32_t freq){
+void FrequencyCounter::setFreq(int character, uint32_t freq){
     frequencyTable[character] = freq;
 }

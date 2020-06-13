@@ -36,7 +36,7 @@ void HuffmanNode::print(){
 
 HuffmanTree::HuffmanTree(){;}
 
-HuffmanTree::HuffmanTree(std::map<char, uint32_t> frequencyTable ){
+HuffmanTree::HuffmanTree(std::map<int, uint32_t> frequencyTable ){
     
     // Set Up
     for ( auto iter : frequencyTable ){
