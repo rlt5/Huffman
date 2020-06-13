@@ -21,7 +21,8 @@ class BitStream
         int loadFile(string inputFileName); // This should call Frequency Counter
         void writeToFile(string outputFileName);
         char* getBuffer();
-        int getBufferLength();
+        uint32_t getBufferLength();
+        uint32_t getOutputBufferLength();
         FrequencyCounter getFc();
         HuffmanTree* getHuffmanTree();
         // void setBuffer(Object buffer);
